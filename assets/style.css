@@ -1,0 +1,49 @@
+*{
+   margin:0px;
+   padding:0px;
+   box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+#right-wheel,#left-wheel{
+    animation: wheel 2s  infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#man-bike{
+    animation: bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+#hat{
+    animation: hat 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes wheel{
+       form{
+        transform: rotateZ(0deg);
+       } 
+       to{
+        transform: rotateZ(360deg);
+       }
+}
+
+@keyframes bike{
+    form{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(20deg);
+    }
+}
+@keyframes hat{
+    form{
+        transform: translateY(0%) rotateZ(00deg);
+    }
+    to{
+        transform: translateY(40%) rotateZ(20deg);
+ }
+}
